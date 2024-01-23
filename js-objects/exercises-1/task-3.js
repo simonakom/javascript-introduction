@@ -7,7 +7,7 @@
 
 
 class BankAccount {
-    #balance; //privatus laukas, matomas/koreguojamas tik klaseje
+    #balance; 
     constructor(accountNumber) { 
         this.accountNumber = accountNumber; 
         this.#balance = 0
@@ -20,20 +20,15 @@ class BankAccount {
         console.log("Not enough funds. Current account amount:  " + this.#balance);
         else this.#balance -= amount 
     }
-    //Encapsulation: nustato galimybe gauti, matyti balance (GETTER- read obly property)
-    get balance(){ //inkapsuliuos balance gavima funkcijoje tokiu budu matomas "myBankAccount.deposit(400);"
-        return this.#balance; // gaunamas privatus laukas
+    //Encapsulation: 
+    get balance(){ 
+        return this.#balance;
     }
 }
 
 const myBankAccount = new BankAccount ("548962354345");
-//negalima redaguoti uz klases ribu nes nenustatymas leidimas redaguoti #balance
-// myBankAccount.balance += 400;
-// myBankAccount.balance -= 350;
 
-//funcitons: veikia su privaciais laukais jei yra getter
 myBankAccount.deposit(400);
 myBankAccount.withdraw(390);
-// myBankAccount.accountNumber; //accountNumber siioje vietoje savybe/property o virsuje laukas
 
 console.log(myBankAccount.balance);

@@ -1,12 +1,9 @@
-//apjungti kelias klases (Vehicle - tevine klase)
-
 class Vehicle {
     constructor(speed, vehicleMake) {
         this.speed = speed;
         this.vehicleMake = vehicleMake;
         this.color = "red";
     }
-
     horn (){
         console.log("Makes a sound...");
     }
@@ -14,7 +11,7 @@ class Vehicle {
 
 class Car extends Vehicle {
     constructor(speed, make, doorCount) {
-        super(speed, make,); //iskvieciamas Vehicle constructor
+        super(speed, make,); 
         this.doorCount = doorCount;
     }
     horn (){
@@ -23,7 +20,7 @@ class Car extends Vehicle {
 }
 class Bike extends Vehicle {
     constructor(speed, make) {
-        super(speed, make,); //iskvieciamas Vehicle constructor
+        super(speed, make,); 
     }
     horn (){
         console.log("Ring Ring!");
@@ -31,7 +28,7 @@ class Bike extends Vehicle {
 }
 class Ship extends Vehicle {
     constructor(speed, make, doorCount) {
-        super(speed, make,); //iskvieciamas Vehicle constructor
+        super(speed, make,); 
         this.doorCount = doorCount;
     }
 }
