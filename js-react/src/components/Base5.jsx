@@ -9,3 +9,22 @@ export default function  Base5 ({text1, text2, color = "green"}) {
     </div>
     );
 }
+
+
+// 2 option with obj:
+// export default function  Base5 ({
+//     text1,
+//     text2, 
+//     color = "purple",
+//     obj: {objText1, objText2, objColor},
+// }) 
+//     {
+
+//     return (
+//     <div style={{color: objColor || color }}>
+//         <Base4
+//             text1={"5task " + objText1 || text1 } 
+//             text2={"5task " + objText2 || text2 }  />
+//     </div>
+//     );
+// }
