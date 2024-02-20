@@ -17,3 +17,8 @@
 	flex-wrap: wrap;
 	gap: 0.75rem;
 }
+
+.weightInput {
+	width: 100px;
+	margin-top: 20px;
+}

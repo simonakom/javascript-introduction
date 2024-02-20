@@ -5,6 +5,7 @@ import Base3 from './components/Base3';
 import Base4 from './components/Base4';
 import Base5 from './components/Base5';
 import Form1 from './components/Form1';
+import Form2 from './components/Form2';
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
             {/* <Base5 text1="text1" text2="text2" color="orange" obj={obj}/>  */}
   <hr></hr>
       <Form1 />
+  <hr></hr>
+      <Form2 />
 
     </div>
   );
