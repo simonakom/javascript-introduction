@@ -6,6 +6,9 @@ import Base4 from './components/Base4';
 import Base5 from './components/Base5';
 import Form1 from './components/Form1';
 import Form2 from './components/Form2';
+import Form3 from './components/Form3';
+import Form4 from './components/Form4';
+import Form5 from './components/Form5';
 
 function App() {
 
@@ -19,6 +22,7 @@ function App() {
     <div className="App">
       <Base1/>
   <hr></hr>
+  <br></br>
       <Base2
       	atributas1="Tekstas"
 				atributas2={4}
@@ -38,20 +42,35 @@ function App() {
 				atributas9={<Base1 />}
 			/>
   <hr></hr>
+  <br></br>
       <Base3 mode={1} />
-      <hr></hr>
+  <hr></hr>
+  <br></br>
       <Base4 text1="text1" text2="text2"/>
           {/* <Base4>
               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, magni.</p>
             </Base4> */}
   <hr></hr>
+  <br></br>
       <Base5 text1="first text" text2="second text" color="purple"/> 
             {/* <Base5 text1="text1" text2="text2" color="orange" obj={obj}/>  */}
   <hr></hr>
-      <Form1 />
+  <br></br>
+      <Form1  />
   <hr></hr>
+  <br></br>
       <Form2 />
-
+  <hr></hr>
+  <br></br>
+      <Form3 />
+  <hr></hr>
+  <br></br>
+      <Form4 />
+  <hr></hr>
+  <br></br>
+      <Form5 />
+  <hr></hr>
+  <br></br>
     </div>
   );
 } 
