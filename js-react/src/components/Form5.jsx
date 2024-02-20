@@ -1,6 +1,35 @@
 // Sukurti komponentą su dviem range tipo įvedimais https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range vienu color įvedimu https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color ir mygtukais sukurti ir išsaugoti. Paspaudus mygtuką sukurti, atsiranda naujas kvadratas 100px aukščio ir pločio bei juodu fonu. Keičiant range ir color įvedimus keičiasi ir kvadrato išvaizda. Kvadrato išvaizdą nustato įvedimai: range tipo įvedimai nuo 10 iki 200 ir nustato plotį ir aukštį pikseliais, color - fono spalvą. Paspaudus mygtuką išsaugoti, kvadrato išvaizda išsaugoma ir į nustatymus nebereguoja. Vėl paspaudus mygtuką sukurti- atsiranda naujas reguliuojamas kvadratas.
 
-import React, { useState } from 'react';
+import { useState } from 'react';
+
+// export default function Form5(){
+//     const [rectangles, setRectangles ] = useState([]);
+//     const [currentRectangle, setCurrentRectangle ] = useState();
+//     const [createClicked, setCreateClicked ] = useState(false);
+
+//     return (
+//         <div style={{background: "orange", minHeight:"300px", padding: "1rem"}}>
+//             <button>
+//                 onClick={()=>{
+//                     setCurrentRectangle({
+//                         width: "10",
+//                         height: "10",
+//                         color: "black"
+//                     });
+//                     setCreateClicked
+
+//                 } }
+
+//             </button>
+
+
+
+//         </div>
+//     )
+//     }
+
+
+
 
 export default function Form5(){
     const [width, setWidth] = useState(100);
