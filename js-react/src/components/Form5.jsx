@@ -2,13 +2,11 @@
 
 import { useState } from 'react';
 
-
 export default function Form5(){
   const [boxes, setBoxes] = useState ([]);
   const [width, setWidth] = useState (0);
   const [height, setHeight] = useState (0);
   const [color, setColor] = useState ("black");
-
 
 return (
   <div className="mt-5 bg-blue-200 min-h-[70vh] pb-1 font-semibold border-2 border-purple-400 rounded">
@@ -92,7 +90,6 @@ return (
   </div>
   );
 }
-
 
 
 // export default function Form5(){
