@@ -15,6 +15,7 @@ export default function Form4(){
     <div>
         <input 
             type="text" 
+            placeholder="text"
             value={text} 
             onChange={(e) => setText(e.target.value)}
         />
