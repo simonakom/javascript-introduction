@@ -2,35 +2,6 @@
 
 import { useState } from 'react';
 
-// export default function Form5(){
-//     const [rectangles, setRectangles ] = useState([]);
-//     const [currentRectangle, setCurrentRectangle ] = useState();
-//     const [createClicked, setCreateClicked ] = useState(false);
-
-//     return (
-//         <div style={{background: "orange", minHeight:"300px", padding: "1rem"}}>
-//             <button>
-//                 onClick={()=>{
-//                     setCurrentRectangle({
-//                         width: "10",
-//                         height: "10",
-//                         color: "black"
-//                     });
-//                     setCreateClicked
-
-//                 } }
-
-//             </button>
-
-
-
-//         </div>
-//     )
-//     }
-
-
-
-
 export default function Form5(){
     const [width, setWidth] = useState(100);
     const [height, setHeight] = useState(100);
