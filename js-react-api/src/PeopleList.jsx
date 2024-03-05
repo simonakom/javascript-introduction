@@ -1,6 +1,6 @@
 import Person from "./Person";
 
-export default function PeopleList({people}) {
+export default function PeopleList({people, saveNewPerson}) {
 	console.log(people);
 
 	return (
@@ -9,6 +9,7 @@ export default function PeopleList({people}) {
 				<Person 
 					person={person} 
 					key={index} 
+					saveNewPerson = {saveNewPerson}
 				/>
 			))}
 		</div>
